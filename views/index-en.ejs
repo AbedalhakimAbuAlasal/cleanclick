@@ -1,515 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PIZARA International Smart Tech</title>
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-
-  <!-- Custom Tailwind Colors -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            dark: '#0B3D2E',
-            primary: '#3C6255',
-            accent: '#E6B400',
-            light: '#E8F9F1',
-            white: '#FFFFFF',
-          },
-        },
-      },
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 </head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center">
 
-<body class="bg-white font-sans antialiased">
-    <div class="fixed top-20 lg:top-24 right-2 lg:right-4 z-[9999]">
-        <a href="/ar" class="bg-light hover:bg-accent text-dark font-semibold px-4 py-2 rounded-full shadow-md hover:shadow-lg transition w-12 h-12 flex items-center text-center">
-        Ar
-        </a>
+    <a href="ar" class="fixed z-[999] top-5 right-5 w-12 h-12 flex items-center justify-center text-white font-bold 
+      bg-[#0F5269]
+      rounded-full shadow-lg cursor-pointer hover:scale-110 transition-transform duration-300">
+      Ar
+    </a>
+
+    <div class="fixed z-[999] bottom-5 right-5 w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center text-white font-bold border border-green-600 
+      bg-gradient-to-tr from-green-600 via-green-500 to-green-400
+      rounded-full shadow-lg cursor-pointer hover:scale-110 transition-transform duration-300">
+        <i class="fa-brands fa-whatsapp text-white text-2xl lg:text-3xl font-bold"></i>
     </div>
 
-    <nav class="fixed top-0 left-0 w-full bg-light backdrop-blur-md shadow-md z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 lg:h-20">
-            <a href="#" class="flex flex-col items-center h-full group">
-                <img src="/images/pizara_logo.png" alt="Pizara Logo" class="h-8 lg:h-10 w-auto transition-transform duration-300 group-hover:scale-110">
 
-                <span class="mt-1 text-xl lg:text-3xl font-extrabold bg-gradient-to-r from-accent via-primary to-dark bg-clip-text text-transparent 
-                            transition-all duration-500 ease-in-out group-hover:tracking-wider group-hover:scale-105">
-                    Pizara
-                </span>
-            </a>
+  <section id="Hero" class="flex flex-col items-center justify-center text-center min-h-[50vh] xl:min-h-screen  bg-gradient-to-bl from-sky-400 via-[#A7DADC] to-[#A0E7E5] px-6 py-16 w-full">
+  
+      <div class="flex items-end justify-end gap-4 mb-8">
+          <img 
+          src="/images/logo_crystal.png" 
+          alt="Crystal Logo" 
+          class="w-12 md:w-20 h-12 md:h-20 rounded-full shadow-lg shadow-cyan-500/30"
+          >
+          <img 
+              src="/images/crystal.png" 
+              alt="Crystal Image" 
+              class="h-12 md:h-16 w-auto drop-shadow-lg relative"
+          >
+      </div>
+
+      <div class="relative w-full flex justify-center items-center">
+          <div class="absolute top-1/2 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent blur-sm opacity-70"></div>
+          <h1 class="relative text-3xl sm:text-4xl md:text-5xl text-[#1F4E5F] font-bold drop-shadow-sm mb-4 text-center">
+              Crystal Water Well & Tank Cleaning
+          </h1>
+      </div>
 
 
-            <ul class="hidden lg:flex space-x-8 text-dark font-medium">
-            <li><a href="#about" class="nav-link hover:text-accent transition">About Us</a></li>
-            <li><a href="#why" class="nav-link hover:text-accent transition">Why Pizara</a></li>
-            <li><a href="#services" class="nav-link hover:text-accent transition">Services</a></li>
-            <li><a href="#projects" class="nav-link hover:text-accent transition">Projects</a></li>
-            <li><a href="#partners" class="nav-link hover:text-accent transition">Partners</a></li>
-            <li><a href="#values" class="nav-link hover:text-accent transition">Values</a></li>
-            <li><a href="#contact" class="nav-link hover:text-accent transition">Contact</a></li>
-            </ul>
+      <p class="text-lg sm:text-xl md:text-2xl font-semibold text-[#1F4E5F] max-w-2xl mb-8">
+          Experts in water well and tank cleaning services in Amman
+      </p>
 
-            <div class="lg:hidden">
-            <button id="menu-btn" class="text-dark focus:outline-none">
-                <i class="fa-solid fa-bars text-2xl"></i>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <div>
+            <button id="whatsappButton" class="bg-gradient-to-bl from-[#8FD6D1] via-[#A7DADC] to-[#C7E9E4] 
+                    hover:from-[#F2F2F2] hover:to-[#A8DADC] border border-[#8FD6D1] 
+                    text-[#1F4E5F] font-semibold px-8 py-3 rounded-xl shadow-md 
+                    hover:shadow-lg transition-all duration-300 flex items-center 
+                    justify-center gap-2 transform hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+              Start WhatsApp Chat
             </button>
-            </div>
+          </div>
+
+          <a  href="#Ourservices"
+          class="bg-gradient-to-bl from-[#71C9CE] via-[#006D77] to-[#71C9CE] hover:from-[#F2F2F2] border border-[#8FD6D1] hover:to-[#A8DADC] text-white hover:text-[#1F4E5F] font-semibold px-8 py-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105"
+          >
+          View Services
+        </a>
+      </div>
+  </section>
+  <section id="aboutUs" class="bg-gray-50 py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-bold text-[#2B6777] mb-4">
+        About Us
+      </h2>
+      <p class="text-lg md:text-xl font-medium text-[#2B6777] mb-16 max-w-3xl mx-auto leading-relaxed">
+        At Crystal, we provide professional water well and tank cleaning services using the latest equipment and techniques to ensure clean and safe water. We serve homes, companies, and institutions in Amman, delivering high-quality, reliable service.
+      </p>
+      <h3 class="text-2xl md:text-3xl font-bold text-[#2B6777] mb-8">
+        Our Strengths
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 text-left">
+        <div class="flex flex-col items-center bg-white border justify-center p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+          <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#EAF6F6] mb-4 shadow-md hover:bg-cyan-200 transition-all duration-300">
+            <i class="fas fa-shield-alt text-[#2B6777] text-3xl"></i>
+          </div>
+          <p class="font-semibold text-xl mb-2 text-[#2B6777]">Certified & Safe</p>
+          <p class="text-[#2B6777] text-center">Licensed team using approved cleaning methods</p>
         </div>
 
-        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-md">
-            <ul class="flex flex-col md:flex-row items-center gap-4 md-gap-6 justify-start md:justify-start mx-auto w-3/4  p-6 text-dark font-medium">
-                <li><a href="#about" class="nav-link hover:text-accent transition">About Us</a></li>
-                <li><a href="#why" class="nav-link hover:text-accent transition">Why Pizara</a></li>
-                <li><a href="#services" class="nav-link hover:text-accent transition">Services</a></li>
-                <li><a href="#projects" class="nav-link hover:text-accent transition">Projects</a></li>
-                <li><a href="#partners" class="nav-link hover:text-accent transition">Partners</a></li>
-                <li><a href="#values" class="nav-link hover:text-accent transition">Values</a></li>
-                <li><a href="#contact" class="nav-link hover:text-accent transition">Contact</a></li>
+        <div class="flex flex-col items-center bg-white border justify-center p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+          <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#EAF6F6] mb-4 shadow-md hover:bg-cyan-200 transition-all duration-300">
+            <i class="fas fa-tools text-[#2B6777] text-3xl"></i>
+          </div>
+          <p class="font-semibold text-xl mb-2 text-[#2B6777]">Extensive Experience</p>
+          <p class="text-[#2B6777] text-center">Years of expertise in water system maintenance</p>
+        </div>
+
+        <div class="flex flex-col items-center bg-white border justify-center p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 
+                    sm:col-span-2 sm:justify-self-center lg:col-span-1">
+          <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#EAF6F6] mb-4 shadow-md hover:bg-cyan-200 transition-all duration-300">
+            <i class="fas fa-handshake text-[#2B6777] text-3xl"></i>
+          </div>
+          <p class="font-semibold text-xl mb-2 text-[#2B6777]">Trusted</p>
+          <p class="text-[#2B6777] text-center">Hundreds of satisfied customers in Amman</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="Ourservices" class="py-20 px-6 text-white w-full bg-[#1F4E5F]">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-8 text-[#EAF6F6]">
+        Our Services
+      </h2>
+      <p class="text-lg md:text-xl font-medium text-[#EAF6F6] mb-12 max-w-3xl mx-auto">
+        Tailored water well and tank cleaning services
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 text-left">
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-[#1F4E5F] rounded-2xl border border-slate-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <h3 class="text-xl md:text-2xl font-bold text-[#EAF6F6] text-center">
+            Roof Tank Cleaning
+          </h3>
+          <p class="text-[#EAF6F6] text-center">
+            Cleaning and disinfecting rooftop tanks for homes and businesses. We remove all sediments, algae, and contaminants to ensure your water supply remains clean and safe.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-[#1F4E5F] rounded-2xl border border-slate-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <h3 class="text-xl md:text-2xl font-bold text-[#EAF6F6] text-center">
+            Ground Well Cleaning
+          </h3>
+          <p class="text-[#EAF6F6] text-center">
+            Cleaning and maintenance of ground wells, removing sediments and inspecting water quality.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-[#1F4E5F] rounded-2xl border border-slate-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 md:col-span-2 xl:col-span-1 sm:mx-auto">
+          <h3 class="text-xl md:text-2xl font-bold text-[#EAF6F6] text-center">
+            Underground Concrete Tank Cleaning
+          </h3>
+          <p class="text-[#EAF6F6] text-center">
+            Comprehensive cleaning of large underground concrete tanks, removing sediments and disinfecting walls and floors. Ideal for companies and large complexes.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<section id="Booking" class="bg-gray-50 py-20 px-6 w-full">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-5xl font-extrabold text-[#2B6777] mb-4">
+      Prices and Discounts
+    </h2>
+    <p class="text-lg md:text-xl font-medium text-[#2B6777] mb-16 max-w-3xl mx-auto leading-relaxed">
+      Choose your service and enjoy transparent pricing with no hidden fees
+    </p>
+
+    <div class="relative">
+      <div id="cards-container"
+           class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 snap-x snap-mandatory justify-start md:justify-center">
+
+        <div class="snap-center flex-shrink-0 w-full md:w-full lg:w-full flex flex-col justify-between p-2 sm:p-4 lg:p-6 bg-white rounded-xl shadow-xl border border-gray-100 transition-transform transform hover:-translate-y-3 hover:shadow-2xl hover:scale-105">
+          <h3 class="font-bold text-2xl mb-6 text-[#2B6777] text-start">Individual House / Apartment</h3>
+          <div class="flex flex-col space-y-6">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Cleaning of all tanks (roof & ground)</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Removal of sand, sediments, silt, and debris</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Disinfection with safe chemicals for drinking water</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#FFB347] to-[#FF7E5F] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="font-semibold text-[#0F5269] text-sm md:text-base text-start">Roof Tank: 8 JOD | Ground Tank: 20 JOD</span>
+              </li>
             </ul>
+          </div>
         </div>
-    </nav>
-    <section id="hero" class="min-h-[50vh] lg:min-h-screen flex py-10 items-center justify-center bg-gradient-to-br from-dark via-dark/90 to-dark/80 text-white">
-        <div class="container flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 py-16 flex flex-col-reverse xl:grid xl:grid-cols-2 xl:gap-12 items-center">
-            <div class="text-center xl:text-left space-y-6 mt-10 md:mt-0">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold ">
-                    Innovating Today... <br class="hidden sm:block" />
-                    <span class="text-accent">Growing Tomorrow.</span>
-                </h1>
 
-                <p class="text-base sm:text-lg md:text-xl text-light/90 md:w-3/4 xl:w-fit mx-auto">
-                    At <span class="font-semibold text-accent">PIZARA</span>, we integrate AI, agriculture, water, and energy systems
-                    to create an intelligent, sustainable ecosystem that drives the world toward a greener, smarter future.
-                </p>
-
-                <div class="flex flex-col sm:flex-row md:w-2/3 mx-auto justify-center xl:justify-start xl:mx-0 gap-4 mt-6">
-                    <a href="#about"
-                        class="w-full max-w-xs md:max-w-md mx-auto bg-accent hover:bg-white transition text-dark hover:text-dark hover:border hover:border-light px-6 py-3 rounded-full font-semibold shadow-md text-sm sm:text-base">
-                        <i class="fa-solid fa-leaf me-2"></i> Discover More
-                    </a>
-                    <a href="#contact"
-                        class="w-full max-w-xs md:max-w-md mx-auto border-2 border-light text-light hover:bg-white hover:text-primary transition px-6 py-3 rounded-full font-semibold text-sm sm:text-base">
-                        <i class="fa-solid fa-envelope me-2"></i> Contact Us
-                    </a>
+        <div class="snap-center flex-shrink-0 w-full md:w-full lg:w-full flex flex-col justify-between p-2 sm:p-4 lg:p-6 bg-white rounded-xl shadow-xl border border-gray-100 transition-transform transform hover:-translate-y-3 hover:shadow-2xl hover:scale-105">
+          <h3 class="font-bold text-2xl mb-6 text-[#2B6777] text-start">Residential Complexes</h3>
+          <div class="flex flex-col space-y-6">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-            </div>
-
-            <div class="flex justify-center lg:justify-end mb-8 md:mb-0">
-                <img
-                    src="https://www.digi.com/getattachment/Blog/post/How-Investing-in-Green-Technology-Saves-Businesses/1612-i107-029-S-m005-c11-ecology_concept_illustration-850x720.jpg?lang=en-US"
-                    alt="Green Tech Illustration"
-                    class="drop-shadow-2xl animate-float rounded-full w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-80 lg:h-80 object-cover"
-                />
-            </div>
-        </div>
-    </section>
-    <section id="about" class="py-20 bg-white text-dark">
-        <div class="container flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-dark/90 mb-4">
-                    About PIZARA International Smart Tech
-                </h2>
-                <p class="text-lg sm:text-xl text-dark/80">
-                    PIZARA International Smart Tech is a global leader in Smart Agriculture, Artificial Intelligence,
-                    and Environmental Data Analytics. We empower people and organizations to apply modern technology
-                    to achieve sustainability in food, energy, and water systems.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-center">
-                <!-- Vision -->
-                <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light w-full max-w-md mx-auto">
-                    <i class="fa-solid fa-eye text-4xl mb-4 text-light"></i>
-                    <h3 class="text-xl font-semibold mb-2">Our Vision</h3>
-                    <p>
-                    To become the world’s reference in merging technology with nature to achieve smart harmony
-                    between humanity and the environment.
-                    </p>
+                <span class="text-gray-700 text-start text-sm md:text-base">Cleaning of all tanks (roof & ground)</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-
-                <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light w-full max-w-md mx-auto">
-                    <i class="fa-solid fa-bullseye text-4xl mb-4 text-light"></i>
-                    <h3 class="text-xl font-semibold mb-2">Our Mission</h3>
-                    <p>
-                    Transforming data into knowledge, knowledge into solutions, and solutions into sustainable growth.
-                    </p>
+                <span class="text-gray-700 text-start text-sm md:text-base">Removal of sand, sediments, silt, and debris</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-
-                <div class="md:col-span-2 lg:col-span-1 flex justify-center">
-                    <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light w-full max-w-md mx-auto">
-                        <i class="fa-solid fa-leaf text-4xl mb-4 text-light"></i>
-                        <h3 class="text-xl font-semibold mb-2">Core Values</h3>
-                        <p>
-                        Innovation, Sustainability, and Smart Integration of AI and Agriculture for a greener future.
-                        </p>
-                    </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Disinfection with safe chemicals for drinking water</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#FFB347] to-[#FF7E5F] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="why" class="py-20 bg-primary text-light">
-        <div class="container flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Why Choose PIZARA?</h2>
-                <p class="text-lg sm:text-xl text-light">
-                    Linking science with technology to serve people and the environment, and empowering the next generation of agri-tech leaders.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-                <div class="bg-light rounded-2xl p-6 hover:shadow-lg transition text-dark border border-light w-full max-w-md mx-auto">
-                    <i class="fa-solid fa-globe text-4xl mb-4 text-dark"></i>
-                    <h3 class="text-xl font-semibold mb-2">Global Partnerships</h3>
-                    <p>
-                        Collaborating with universities, research centers, and global tech companies to drive innovation worldwide.
-                    </p>
-                </div>
-
-                <div class="bg-light rounded-2xl p-6 hover:shadow-lg transition text-dark border border-light w-full max-w-md mx-auto">
-                    <i class="fa-solid fa-seedling text-4xl mb-4 text-dark"></i>
-                    <h3 class="text-xl font-semibold mb-2">Sustainable Agriculture</h3>
-                    <p>
-                        Leading sustainable agricultural transformation in the Middle East with smart farming and clean energy solutions.
-                    </p>
-                </div>
-
-                <div class="md:col-span-2 lg:col-span-1 flex justify-center">
-                    <div class="bg-light rounded-2xl p-6 hover:shadow-lg transition text-dark border border-light w-full max-w-md mx-auto">
-                    <i class="fa-solid fa-people-roof text-4xl mb-4 text-dark"></i>
-                    <h3 class="text-xl font-semibold mb-2">Empowering Next Gen</h3>
-                    <p>
-                        Training and mentoring the next generation of agri-tech leaders and innovators through our PIZARA Academy programs.
-                    </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="services" class="py-20 bg-white text-dark">
-        <div class="container flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-primary">Our Services</h2>
-                <p class="text-lg sm:text-xl text-dark/80">
-                    We provide innovative and sustainable solutions in Smart Agriculture, AI, Digital Marketing, and Environmental Management.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-                <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light">
-                    <i class="fa-solid fa-robot text-4xl mb-4 text-light"></i>
-                    <h3 class="text-xl font-semibold mb-2">AI & Data Science</h3>
-                    <p>
-                    AI models for crop yield & climate forecasting, smart sensors for water & soil quality, and machine learning for animal & plant health.
-                    </p>
-                </div>
-
-                <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light">
-                    <i class="fa-solid fa-chart-line text-4xl mb-4 text-light"></i>
-                    <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
-                    <p>
-                    Brand identity, AI-based marketing strategies, social media management, and data-driven campaigns for agri-tech organizations.
-                    </p>
-                </div>
-
-                <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light">
-                    <i class="fa-solid fa-seedling text-4xl mb-4 text-light"></i>
-                    <h3 class="text-xl font-semibold mb-2">Smart Agriculture</h3>
-                    <p>
-                    IoT-based irrigation, AI-powered crop & soil monitoring, vertical & hydroponic smart farming, and sustainable energy solutions.
-                    </p>
-                </div>
-
-                <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light">
-                    <i class="fa-solid fa-water text-4xl mb-4 text-light"></i>
-                    <h3 class="text-xl font-semibold mb-2">Water & Bioenergy</h3>
-                    <p>
-                    AI-based water quality monitoring, smart fertilizer management, agricultural waste-to-energy systems, and carbon footprint reduction.
-                    </p>
-                </div>
-
-                <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light">
-                    <i class="fa-solid fa-fish text-4xl mb-4 text-light"></i>
-                    <h3 class="text-xl font-semibold mb-2">Aquaculture & Green Economy</h3>
-                    <p>
-                    Smart aquaculture systems, water & temperature monitoring, efficient feed strategies, and sustainable supply chain development.
-                    </p>
-                </div>
-
-                <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light">
-                    <i class="fa-solid fa-graduation-cap text-4xl mb-4 text-light"></i>
-                    <h3 class="text-xl font-semibold mb-2">PIZARA Academy</h3>
-                    <p>
-                    Hands-on training for engineers & innovators in smart agriculture, AI, data analytics, clean energy, and green entrepreneurship.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-20 bg-primary text-light ">
-        <div class="container w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Our Projects</h2>
-                <p class="text-lg sm:text-xl text-light">
-                    Discover our latest projects in smart agriculture, AI solutions, and sustainable technology.
-                </p>
-            </div>
-            <div class="flex flex-wrap justify-center gap-8 lg:grid lg:grid-cols-3 lg:justify-between">
-                <div class="bg-light rounded-2xl hover:shadow-lg transition text-dark text-center w-full sm:w-[320px] lg:w-auto">
-                    <img src="https://www.synox.io/wp-content/uploads/2022/04/smart-farming-agriculture-du-futur-iot.jpg" alt="Project 1"
-                    class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Smart Farm Initiative</h3>
-                        <p>Implementing AI-powered irrigation and crop monitoring systems for sustainable farming.</p>
-                    </div>
-                </div>
-                <div class="bg-light rounded-2xl hover:shadow-lg transition text-dark text-center w-full sm:w-[320px] lg:w-auto">
-                    <img src="https://eos.com/wp-content/uploads/2023/08/root-zone-irrigation.jpg.webp" alt="Project 2"
-                    class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Water Management System</h3>
-                        <p>Smart water monitoring and treatment system for agricultural and urban environments.</p>
-                    </div>
-                </div>
-                <div class="bg-light rounded-2xl hover:shadow-lg transition text-dark text-center w-full sm:w-[320px] lg:w-auto">
-                    <img src="https://organicagcentre.ca/wp-content/uploads/2025/04/integrated-smart-farming-alberta.jpeg" alt="Project 3"
-                    class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Green Energy Integration</h3>
-                        <p>Renewable energy solutions for powering smart farms and sustainable communities.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="partners" class="py-20 bg-white text-dark">
-        <div class="container flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-primary">Our Partners</h2>
-                <p class="text-lg sm:text-xl text-dark/80">
-                    We are proud to collaborate with visionary institutions and global technology leaders
-                    who share our passion for innovation and sustainability.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 text-center">
-
-                <div class="flex flex-col items-center p-6 bg-primary rounded-2xl shadow-sm hover:shadow-md transition text-light
-                            order-2 md:order-2 xl:order-1 max-w-md mx-auto">
-                    <div class="text-4xl mb-3"><i class="fas fa-graduation-cap text-light"></i></div>
-                    <h3 class="text-xl font-semibold mb-2">Universities</h3>
-                    <p class="text-light text-base">
-                        Collaborating with leading universities to support research, education, and innovation in smart agriculture.
-                    </p>
-                </div>
-
-                <div class="flex flex-col items-center p-6 bg-primary rounded-2xl shadow-sm hover:shadow-md transition text-light
-                            order-1 md:order-1 xl:order-2 max-w-md mx-auto">
-                    <div class="text-4xl mb-3"><i class="fas fa-flask text-light"></i></div>
-                    <h3 class="text-xl font-semibold mb-2">Research Centers</h3>
-                    <p class="text-light text-base">
-                        Partnering with research institutes to develop sustainable and data-driven agricultural technologies.
-                    </p>
-                </div>
-
-                <div class="flex flex-col items-center p-6 bg-primary rounded-2xl shadow-sm hover:shadow-md transition text-light
-                            order-3 md:order-2 md:col-span-2 mx-auto xl:order-3 xl:col-span-1 max-w-md">
-                    <div class="text-4xl mb-3"><i class="fas fa-globe text-light"></i></div>
-                    <h3 class="text-xl font-semibold mb-2">Global Technology Companies</h3>
-                    <p class="text-light text-base">
-                        Working with international tech leaders to integrate AI, IoT, and smart systems across agri-environments.
-                    </p>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <p class="text-base sm:text-lg text-dark/70">
-                    Together, we drive change — creating impactful technologies that connect people, nature, and innovation.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="values" class="py-20 bg-primary text-light">
-        <div class="container flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-light">Our Core Values</h2>
-                <p class="text-lg sm:text-xl text-light/90">
-                    At PIZARA, our values guide every project and partnership — inspiring innovation,
-                    responsibility, and sustainable growth for future generations.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                <div class="bg-light rounded-2xl p-6 border border-light/30 hover:shadow-lg transition text-dark">
-                    <i class="fa-solid fa-lightbulb text-3xl mb-4 text-dark"></i>
-                    <h3 class="text-xl font-semibold mb-2">Innovation</h3>
-                    <p>
-                    We constantly push boundaries to deliver creative solutions that shape a smarter future.
-                    </p>
-                </div>
-
-                <div class="bg-light rounded-2xl p-6 border border-light/30 hover:shadow-lg transition text-dark">
-                    <i class="fa-solid fa-gem text-3xl mb-4 text-dark"></i>
-                    <h3 class="text-xl font-semibold mb-2">Quality</h3>
-                    <p>
-                    We uphold the highest standards in our technology and services, ensuring lasting impact.
-                    </p>
-                </div>
-
-                <div class="bg-light rounded-2xl p-6 border border-light/30 hover:shadow-lg transition text-dark">
-                    <i class="fa-solid fa-handshake text-3xl mb-4 text-dark"></i>
-                    <h3 class="text-xl font-semibold mb-2">Trust</h3>
-                    <p>
-                    Building long-term relationships through transparency, integrity, and mutual respect.
-                    </p>
-                </div>
-
-                <div class="bg-light rounded-2xl p-6 border border-light/30 hover:shadow-lg transition text-dark">
-                    <i class="fa-solid fa-leaf text-3xl mb-4 text-dark"></i>
-                    <h3 class="text-xl font-semibold mb-2">Sustainability</h3>
-                    <p>
-                    We commit to solutions that preserve resources and create a positive, lasting impact.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="py-20 text-dark" dir="ltr">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-primary">Contact Us</h2>
-            <p class="text-lg sm:text-xl text-dark mb-4">
-                Get in touch with <span class="font-semibold text-dark">PIZARA</span> International Smart Tech
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-center">
-
-                <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light w-full max-w-md mx-auto flex flex-col">
-                    <i class="fa-solid fa-location-dot text-3xl text-light"></i>
-                    <p class="text-base sm:text-lg text-light font-medium">Amman, Shafa Badran, Jordan</p>
-                </div>
-
-                <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light w-full max-w-md mx-auto flex flex-col">
-                    <i class="fa-solid fa-phone text-3xl text-light"></i>
-                    <a href="tel:+962772400700" dir="ltr" class="text-base sm:text-lg text-light font-medium hover:text-accent transition">
-                        +962772400700
-                    </a>
-                </div>
-
-                <div class="md:col-span-2 lg:col-span-1 flex justify-center max-w-md mx-auto w-full">
-                    <div class="bg-primary rounded-2xl p-6 hover:shadow-lg transition text-light w-full flex flex-col">
-                        <i class="fa-solid fa-envelope text-3xl text-light"></i>
-                        <a href="mailto:ceo@pizara.co" class="text-base sm:text-lg text-light font-medium hover:text-accent transition">
-                            ceo@pizara.co
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="flex justify-center gap-6 text-3xl text-primary mt-4">
-                <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <footer class="bg-dark text-light pt-16 pb-8 border-t border-sand/40">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-            <h3 class="text-2xl font-bold text-light mb-4">PIZARA</h3>
-            <p>Innovating the future with smart technology solutions.</p>
-            </div>
-
-            <div>
-            <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
-            <ul class="space-y-2">
-                <li><a href="#about" class="hover:text-accent hover:underline transition">About Us</a></li>
-                <li><a href="#services" class="hover:text-accent hover:underline transition">Services</a></li>
-                <li><a href="#contact" class="hover:text-accent hover:underline transition">Projects</a></li>
-                <li><a href="#contact" class="hover:text-accent hover:underline transition">Values</a></li>
+                <span class="font-semibold text-[#0F5269] text-sm md:text-base text-start">Discount 15% if more than 4 apartments / 4 ground + 4 roof tanks</span>
+              </li>
             </ul>
-            </div>
-
-            <div>
-            <h4 class="text-xl font-semibold mb-4">Contact</h4>
-            <ul class="space-y-2 ">
-                <li><i class="fa-solid fa-location-dot mr-2 text-light"></i>Amman, Shafa Badran, Jordan</li>
-                <li><i class="fa-solid fa-phone mr-2 text-light"></i>+962772400700</li>
-                <li><i class="fa-solid fa-envelope mr-2 text-light"></i>ceo@pizara.co</li>
-            </ul>
-            </div>
-
-            <div>
-            <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
-            <div class="flex gap-4 text-2xl">
-                <a href="#" class="text-light hover:text-accent transition"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="text-light hover:text-accent transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="text-light hover:text-accent transition"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="text-light hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            </div>
+          </div>
         </div>
 
-            <div class="mt-12 text-center text-dark/50 text-sm">
-                &copy; 2025 PIZARA International Smart Tech. All rights reserved.
-            </div>
-        </footer>
+        <div class="snap-center flex-shrink-0 w-full md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto md:w-full mx-auto md:max-w-md flex flex-col justify-between p-2 sm:p-4 lg:p-6 bg-white rounded-xl shadow-xl border border-gray-100 transition-transform transform hover:-translate-y-3 hover:shadow-2xl hover:scale-105">
+          <h3 class="font-bold text-2xl mb-6 text-[#2B6777] text-start">Companies & Institutions</h3>
+          <div class="flex flex-col space-y-6">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Cleaning of all tanks (roof & ground)</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Removal of sand, sediments, silt, and debris</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Disinfection with safe chemicals for drinking water</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#FFB347] to-[#FF7E5F] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="font-semibold text-[#0F5269] text-sm md:text-base text-start">25% discount if total tanks > 10 or cleaning area > 20 m³</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-<style>
-    @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-    }
-    .animate-float {
-    animation: float 4s ease-in-out infinite;
-    }
-    html {
-        scroll-behavior: smooth;
-    }
-</style>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bookingSection" class="bg-[#1F4E5F] py-20 px-6 text-white w-full">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-xl md:text-4xl font-extrabold mb-4 tracking-tight bg-gradient-to-b from-gray-200 to-white bg-clip-text text-transparent">
+      <i class="fas fa-calendar-check mr-2 text-[#EAF6F6]"></i>
+      Book Your Service Now
+    </h2>
+    <p class="text-lg md:text-xl font-medium text-[#E6F9F8] mb-4 max-w-3xl mx-auto">
+      Ensure clean and safe water!
+    </p>
+
+    <div class="flex flex-wrap justify-center items-center gap-6 mb-6">
+      <a href="https://wa.me/962798024513" class="bg-gradient-to-bl from-green-400 via-[#3FA7A0] to-green-400 hover:from-[#76C7B7] hover:to-[#76C7B7] hover:text-[#0F5269] border border-[#8FD6D1] text-white font-semibold px-8 py-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105">
+        <i class="fab fa-whatsapp text-2xl"></i> WhatsApp Booking
+      </a>
+
+      <a href="tel:+962798024513" class="bg-gradient-to-bl from-[#71C9CE] via-[#006D77] to-[#71C9CE] hover:from-[#F2F2F2] border border-[#8FD6D1] hover:to-[#A8DADC] text-white hover:text-[#1F4E5F] font-semibold px-8 py-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105">
+        <i class="fas fa-phone-alt text-lg"></i> Call Directly
+      </a>
+    </div>
+
+    <p class="text-[#E6F9F8] font-medium">
+      <i class="fas fa-clock mr-2"></i>
+      Available 7 days a week • Same-day service • No hidden fees
+    </p>
+  </div>
+</section>
+
+  <section id="contact-us" class="bg-gray-50 py-20 px-6 w-full text-gray-800">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 text-[#2B6777]">
+        Contact Us
+      </h2>
+      <p class="text-lg md:text-xl mb-12 text-[#2B6777]">
+        Get in touch with us for inquiries or bookings
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-8">
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-full sm:w-[45%] md:w-[45%] lg:w-[22%]">
+          <i class="fas fa-phone-alt text-[#2B6777] text-3xl"></i>
+          <h4 class="text-xl font-bold text-[#2B6777]">Phone</h4>
+          <p class="text-[#4FB3BF] text-center">+962 79 000 0000</p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-full sm:w-[45%] md:w-[45%] lg:w-[22%]">
+          <i class="fas fa-envelope text-[#2B6777] text-3xl"></i>
+          <h4 class="text-xl font-bold text-[#2B6777]">Email</h4>
+          <p class="text-[#4FB3BF] text-center">info@waterclean-jo.com</p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-full sm:w-[45%] md:w-[45%] lg:w-[22%] md:mx-auto">
+          <i class="fas fa-map-marker-alt text-[#2B6777] text-3xl"></i>
+          <h4 class="text-xl font-bold text-[#2B6777]">Location</h4>
+          <p class="text-[#4FB3BF] text-center">Amman, Jordan</p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-full sm:w-[45%] md:w-[45%] lg:w-[22%] md:mx-auto">
+          <i class="fas fa-clock text-[#2B6777] text-3xl"></i>
+          <h4 class="text-xl font-bold text-[#2B6777]">Working Hours</h4>
+          <p class="text-[#4FB3BF] text-center">7 days a week, 8:00 AM – 8:00 PM</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="bg-gradient-to-b from-slate-800 via-slate-900 to-slate-800 py-20 px-6 text-white w-full">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <div>
+        <h3 class="text-2xl font-extrabold text-[#A8DADC] mb-4">WaterClean</h3>
+        <p class="text-gray-300 mb-4">
+          At Crystal, we specialize in professional water well and tank cleaning services in Amman. Using modern equipment and certified methods, we ensure clean, safe, and reliable water for homes, buildings, and institutions. Our licensed team, extensive experience, and trusted service make us the preferred choice for hundreds of satisfied customers.
+        </p>
+
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="text-gray-300 hover:text-[#A8DADC] transition-colors duration-300 text-lg"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-gray-300 hover:text-[#A8DADC] transition-colors duration-300 text-lg"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-300 hover:text-[#A8DADC] transition-colors duration-300 text-lg"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-300 hover:text-[#A8DADC] transition-colors duration-300 text-lg"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-[#A0E7E5] mb-4">Contact Us</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li class="flex items-center gap-3">
+            <i class="fas fa-phone-alt text-[#A0E7E5]"></i>
+            <a href="tel:+962798024513" dir="ltr" class="underline" style="letter-spacing: 0.02em;">0 7 9 8 0 2 4 *** Call now</a>
+          </li>        
+          <li class="flex items-center gap-3"><i class="fas fa-envelope text-[#A0E7E5]"></i>crystal.company.jordan@gmail.com</li>
+          <li class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-[#A0E7E5]"></i> Amman, Jordan</li>
+          <li class="flex items-center gap-3"><i class="fas fa-clock text-[#A0E7E5]"></i> 7 days a week, 8:00 AM – 8:00 PM</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-[#A0E7E5] mb-4">Quick Links</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li><a href="#aboutUs" class="hover:text-[#A0E7E5] transition-colors duration-300">About Us</a></li>
+          <li><a href="#Ourservices" class="hover:text-[#A0E7E5] transition-colors duration-300">Our Services</a></li>
+          <li><a href="#Booking" class="hover:text-[#A0E7E5] transition-colors duration-300">Booking</a></li>
+          <li><a href="#contact-us" class="hover:text-[#A0E7E5] transition-colors duration-300">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
+      &copy; 2025 <span class="text-[#E6F9F8]">Crystal</span>. All rights reserved.
+    </div>
+  </footer>
 <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('cards-container');
+    const dotsContainer = document.getElementById('cards-dots');
+    const cards = Array.from(container.children);
 
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+    if (!container || window.innerWidth >= 768) return; 
+
+    cards.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.className = 'w-3 h-3 rounded-full bg-gray-400 transition-all duration-300 cursor-pointer';
+      dot.addEventListener('click', () => {
+        container.scrollTo({ left: cards[index].offsetLeft, behavior: 'smooth' });
+      });
+      dotsContainer.appendChild(dot);
     });
 
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-        e.preventDefault(); 
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-        if (!mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-        }
-        });
-    });
+    const updateDots = () => {
+      const scrollLeft = container.scrollLeft;
+      const cardWidth = cards[0].offsetWidth + 32; 
+      const activeIndex = Math.round(scrollLeft / cardWidth);
+      dotsContainer.querySelectorAll('div').forEach((dot, idx) => {
+        dot.classList.toggle('bg-[#4DD6C6]', idx === activeIndex);
+        dot.classList.toggle('bg-gray-400', idx !== activeIndex);
+      });
+    };
+
+    updateDots();
+    container.addEventListener('scroll', updateDots);
+  });
+
+
+  document.getElementById('whatsappButton').addEventListener('click', function() {
+    console.log('User started WhatsApp chat');
+
+    const phone = "962798024513";
+    const text = "Hello! I want to start a booking conversation.";
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+});
 </script>
+
 </body>
 </html>
