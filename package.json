@@ -1,14 +1,14 @@
 {
-  "name": "pizara-website",
+  "name": "cleanclick-website",
   "version": "1.0.0",
-  "description": "Pizara International Smart Tech website with Arabic and English pages",
+  "description": "CleanClick website with Arabic and English pages",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": ["nodejs", "express", "ejs", "pizara"],
+  "keywords": ["nodejs", "express", "ejs", "cleanclick"],
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {
