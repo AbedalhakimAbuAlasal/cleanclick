@@ -1,0 +1,21 @@
+{
+  "name": "pizara-website",
+  "version": "1.0.0",
+  "description": "Pizara International Smart Tech website with Arabic and English pages",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["nodejs", "express", "ejs", "pizara"],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "ejs": "^3.1.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
