@@ -3,264 +3,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crystal | Professional Tank Cleaning</title>
+    <title>Crystal | Water Well & Tank Cleaning Experts</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .brand-gradient { background: linear-gradient(135deg, #2cb1bc 0%, #25949d 100%); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: #1a202c; }
+        .bg-brand { background-color: #2cb1bc; }
         .text-brand { color: #2cb1bc; }
-        .btn-active { border-color: #2cb1bc !important; background-color: #f0fdfa; color: #2cb1bc; }
-        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05); }
-        
-        /* تأثيرات إضافية للتفاعل */
-        .option-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .option-card:hover { transform: translateY(-2px); border-color: #2cb1bc; }
+        .border-brand { border-color: #2cb1bc; }
+        .hero-gradient { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .btn-transition { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .active-service { border-color: #2cb1bc; background-color: #f0fdfa; color: #115e59; transform: translateY(-2px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .active-freq { border-color: #fb923c; background-color: #fff7ed; color: #9a3412; }
     </style>
 </head>
-<body class="bg-[#fcfdfd] text-gray-800">
+<body class="bg-[#f8fafc]">
 
-    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-[100] border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex items-center gap-2 group cursor-pointer">
-                    <div class="w-11 h-11 brand-gradient rounded-xl flex items-center justify-center text-white shadow-lg shadow-teal-200/50 rotate-3 group-hover:rotate-0 transition-transform">
-                        <span class="text-xl font-bold">C</span>
-                    </div>
-                    <span class="text-2xl font-extrabold tracking-tight text-slate-800">Crystal<span class="text-brand">ly</span></span>
-                </div>
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="#services" class="font-semibold text-sm text-slate-600 hover:text-brand transition">Services</a>
-                    <a href="#pricing" class="font-semibold text-sm text-slate-600 hover:text-brand transition">Pricing</a>
-                    <a href="#booking" class="brand-gradient text-white px-6 py-3 rounded-full text-sm font-bold shadow-md hover:scale-105 transition active:scale-95">Book Appointment</a>
-                </div>
-            </div>
+    <nav class="bg-white/80 backdrop-blur-md py-4 px-6 md:px-12 flex justify-between items-center shadow-sm sticky top-0 z-50">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-brand rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-teal-200">C</div>
+            <span class="text-2xl font-extrabold text-slate-800 tracking-tight">Crystal<span class="text-brand">ly</span></span>
+        </div>
+        <div class="hidden md:flex gap-8 items-center text-sm font-semibold text-slate-600">
+            <a href="#services" class="hover:text-brand transition-colors">Services</a>
+            <a href="#how-it-works" class="hover:text-brand transition-colors">How it Works</a>
+            <a href="#booking" class="bg-brand text-white px-6 py-2.5 rounded-full hover:shadow-lg hover:shadow-teal-100 btn-transition active:scale-95">Book Now</a>
         </div>
     </nav>
 
-    <section class="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-32">
-        <div class="max-w-7xl mx-auto px-4 relative z-10">
-            <div class="text-center max-w-4xl mx-auto">
-                <span class="inline-block px-4 py-1.5 rounded-full bg-teal-50 text-brand text-xs font-bold tracking-widest uppercase mb-6">Certified Water Specialists in Amman</span>
-                <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight">
-                    Pure Water for a <span class="text-brand">Healthier Home.</span>
-                </h1>
-                <p class="text-lg text-slate-500 mb-10 leading-relaxed max-w-2xl mx-auto">
-                    Professional tank and well cleaning using medical-grade disinfection. Trusted by 2,000+ villas and companies in Amman.
-                </p>
-                
-                <div class="bg-white p-2 rounded-2xl shadow-2xl border border-gray-100 flex flex-col md:flex-row gap-2 max-w-2xl mx-auto">
-                    <div class="flex-1 flex items-center px-4 gap-3">
-                        <span class="text-gray-400">📍</span>
-                        <input type="text" placeholder="Enter Area (e.g. Abdoun)" class="w-full py-4 text-sm font-medium outline-none">
-                    </div>
-                    <button onclick="document.getElementById('booking').scrollIntoView()" class="brand-gradient text-white px-10 py-4 rounded-xl font-bold hover:opacity-95 transition shadow-lg">Check Availability</button>
-                </div>
+    <section class="hero-gradient h-[600px] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Pure Water,<br><span class="text-teal-300">Simplified.</span></h1>
+            <p class="text-lg md:text-xl mb-10 opacity-90 font-light leading-relaxed">Professional water system cleaning. Certified experts, non-toxic materials, and same-day service.</p>
+            
+            <div class="bg-white p-2 rounded-2xl shadow-2xl flex flex-col md:flex-row gap-2 max-w-2xl mx-auto">
+                <input type="text" placeholder="Your Phone" class="flex-1 p-4 text-gray-800 outline-none rounded-xl bg-gray-50 focus:bg-white transition-all">
+                <input type="text" placeholder="Area in Amman" class="flex-1 p-4 text-gray-800 outline-none rounded-xl bg-gray-50 focus:bg-white transition-all border-l border-gray-100">
+                <button class="bg-brand text-white px-10 py-4 rounded-xl font-bold hover:brightness-110 btn-transition shadow-lg shadow-teal-100">Get Started</button>
             </div>
         </div>
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-0 opacity-10 pointer-events-none">
-            <svg viewBox="0 0 100 100" class="w-full h-full"><circle cx="50" cy="50" r="40" fill="url(#grad1)" /></svg>
-            <defs><radialGradient id="grad1"><stop offset="0%" stop-color="#2cb1bc"/><stop offset="100%" stop-color="white"/></radialGradient></defs>
-        </div>
     </section>
-
-    <section id="booking" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex flex-col lg:flex-row gap-12">
+<section id="about" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
                 
-                <div class="flex-1">
-                    <div class="mb-10">
-                        <h2 class="text-3xl font-bold text-slate-900">Customize Your Service</h2>
-                        <p class="text-slate-500 mt-2">Select the details below to see an instant quote.</p>
+                <div class="lg:w-1/2 space-y-8">
+                    <div>
+                        <h2 class="text-brand font-bold tracking-widest uppercase text-sm mb-3">Who We Are</h2>
+                        <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                            Providing Pure Water Solutions for <span class="text-brand">Amman</span> Since 2018
+                        </h3>
                     </div>
+                    
+                    <p class="text-slate-600 text-lg leading-relaxed">
+                        At <span class="font-bold text-slate-800">Crystally</span>, we deliver professional water well and tank cleaning services using state-of-the-art equipment and advanced sterilization techniques. Our mission is to ensure every household and business in Amman has access to clean, safe, and pathogen-free water.
+                    </p>
 
-                    <div class="space-y-12">
-                        <div class="step-container">
-                            <label class="flex items-center gap-3 text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">
-                                <span class="w-8 h-8 rounded-full brand-gradient text-white flex items-center justify-center text-xs">01</span>
-                                Select Service Type
-                            </label>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                                <div onclick="selectService('Standard', 20)" id="service-Standard" class="option-card cursor-pointer p-6 border-2 border-gray-100 rounded-2xl hover:bg-gray-50 relative group btn-active">
-                                    <h4 class="font-bold text-lg">Standard</h4>
-                                    <p class="text-xs text-gray-500 mt-1">Roof tank disinfection</p>
-                                    <div class="absolute top-4 right-4 text-brand opacity-0 group-[.btn-active]:opacity-100">✓</div>
-                                </div>
-                                <div onclick="selectService('Deep', 35)" id="service-Deep" class="option-card cursor-pointer p-6 border-2 border-gray-100 rounded-2xl hover:bg-gray-50 relative group">
-                                    <h4 class="font-bold text-lg">Deep Clean</h4>
-                                    <p class="text-xs text-gray-500 mt-1">Walls & floor scrubbing</p>
-                                    <div class="absolute top-4 right-4 text-brand opacity-0 group-[.btn-active]:opacity-100">✓</div>
-                                </div>
-                                <div onclick="selectService('Well', 50)" id="service-Well" class="option-card cursor-pointer p-6 border-2 border-gray-100 rounded-2xl hover:bg-gray-50 relative group">
-                                    <h4 class="font-bold text-lg">Ground Well</h4>
-                                    <p class="text-xs text-gray-500 mt-1">Sediment removal</p>
-                                    <div class="absolute top-4 right-4 text-brand opacity-0 group-[.btn-active]:opacity-100">✓</div>
-                                </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center text-brand">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span class="font-semibold text-slate-700">Residential Services</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center text-brand">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span class="font-semibold text-slate-700">Commercial Solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 w-full grid grid-cols-1 gap-6">
+                    <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
+                        <div class="flex gap-6 items-start">
+                            <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-2xl group-hover:bg-brand group-hover:text-white transition-colors">🛡️</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-2">Certified & Safe</h4>
+                                <p class="text-slate-500 text-sm leading-relaxed">Our licensed team follows strict municipal health protocols, using eco-friendly and certified sterilization materials.</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="step-container">
-                            <label class="flex items-center gap-3 text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">
-                                <span class="w-8 h-8 rounded-full brand-gradient text-white flex items-center justify-center text-xs">02</span>
-                                Quantity & Units
-                            </label>
-                            <div class="grid sm:grid-cols-2 gap-6">
-                                <div class="p-6 bg-slate-50 rounded-2xl flex items-center justify-between">
-                                    <div>
-                                        <span class="block font-bold">Roof Tanks</span>
-                                        <span class="text-xs text-slate-400">8 JOD per additional</span>
-                                    </div>
-                                    <div class="flex items-center gap-4 bg-white p-2 rounded-xl shadow-sm">
-                                        <button onclick="updateQty('tanks', -1)" class="w-10 h-10 rounded-lg hover:bg-gray-100 font-bold">-</button>
-                                        <span id="qty-tanks" class="w-6 text-center font-bold">1</span>
-                                        <button onclick="updateQty('tanks', 1)" class="w-10 h-10 rounded-lg hover:bg-gray-100 font-bold text-brand">+</button>
-                                    </div>
-                                </div>
-                                <div class="p-6 bg-slate-50 rounded-2xl flex items-center justify-between">
-                                    <div>
-                                        <span class="block font-bold">Well Depth</span>
-                                        <span class="text-xs text-slate-400">Per 5 meters</span>
-                                    </div>
-                                    <div class="flex items-center gap-4 bg-white p-2 rounded-xl shadow-sm">
-                                        <button onclick="updateQty('wells', -1)" class="w-10 h-10 rounded-lg hover:bg-gray-100 font-bold">-</button>
-                                        <span id="qty-wells" class="w-6 text-center font-bold">0</span>
-                                        <button onclick="updateQty('wells', 1)" class="w-10 h-10 rounded-lg hover:bg-gray-100 font-bold text-brand">+</button>
-                                    </div>
-                                </div>
+                    <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
+                        <div class="flex gap-6 items-start">
+                            <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-2xl group-hover:bg-brand group-hover:text-white transition-colors">💎</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-2">Expert Experience</h4>
+                                <p class="text-slate-500 text-sm leading-relaxed">Years of specialized experience in Amman's unique water infrastructure, tackling everything from silt to mineral buildup.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
+                        <div class="flex gap-6 items-start">
+                            <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-2xl group-hover:bg-brand group-hover:text-white transition-colors">🤝</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-2">Highly Reliable</h4>
+                                <p class="text-slate-500 text-sm leading-relaxed">Trusted by hundreds of happy clients across Amman. We pride ourselves on punctuality and professional service.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:w-[400px]">
-                    <div class="bg-white rounded-3xl border border-gray-100 shadow-2xl p-8 sticky top-28">
-                        <div class="flex justify-between items-center mb-8">
-                            <h3 class="font-extrabold text-xl">Order Summary</h3>
-                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-[10px] font-bold uppercase">Same Day</span>
-                        </div>
-                        
-                        <div class="space-y-4 mb-8">
-                            <div class="flex justify-between text-sm">
-                                <span class="text-slate-500">Service: <span id="summary-service-name" class="text-slate-900 font-semibold">Standard</span></span>
-                                <span id="summary-service-price" class="font-bold">20 JOD</span>
-                            </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-slate-500">Additional Tanks (<span id="summary-tanks-qty">0</span>)</span>
-                                <span id="summary-tanks-price" class="font-bold">0 JOD</span>
-                            </div>
-                            <div class="flex justify-between text-sm border-t border-dashed pt-4">
-                                <span class="text-slate-500 font-bold">VAT (16%)</span>
-                                <span id="summary-tax" class="font-bold">3.2 JOD</span>
-                            </div>
-                        </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-white py-10 border-b border-slate-100">
+        <div class="container mx-auto px-4 flex flex-wrap justify-center gap-8 md:gap-20 opacity-50 grayscale font-bold text-xs tracking-[0.2em] uppercase">
+            <div class="flex items-center gap-2"><span>ISO 2017 Certified</span></div>
+            <div class="flex items-center gap-2"><span>Amman Municipality Approved</span></div>
+            <div class="flex items-center gap-2"><span>750+ Cleaned</span></div>
+        </div>
+    </div>
 
-                        <div class="bg-slate-900 rounded-2xl p-6 text-white mb-6">
-                            <span class="text-xs opacity-60 uppercase tracking-widest font-bold">Estimated Total</span>
-                            <div class="flex items-baseline gap-1">
-                                <span class="text-4xl font-extrabold" id="total-price">23.2</span>
-                                <span class="text-lg font-bold">JOD</span>
-                            </div>
-                        </div>
+    <section id="booking" class="py-24 container mx-auto px-4 max-w-6xl">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">Book Your Service</h2>
+            <p class="text-slate-500">Transparent pricing, no hidden fees.</p>
+        </div>
 
-                        <button class="w-full brand-gradient text-white py-5 rounded-2xl font-bold text-lg shadow-lg shadow-teal-200 hover:scale-[1.02] transition active:scale-95 flex items-center justify-center gap-3">
-                            Confirm Booking
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        <div class="flex flex-col lg:flex-row gap-12 items-start">
+            <div class="flex-1 space-y-10">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <label class="block font-bold text-slate-800 mb-6 flex items-center gap-2">
+                        <span class="w-2 h-6 bg-brand rounded-full"></span> 1. Select Service Type
+                    </label>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <button data-service="STANDARD" class="service-btn p-5 border-2 border-slate-100 rounded-2xl text-left btn-transition hover:border-teal-200">
+                            <h4 class="font-bold mb-1">Standard</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">Routine sediment removal & sanitation.</p>
                         </button>
-                        
-                        <div class="mt-6 flex items-center justify-center gap-4 text-[10px] text-slate-400 font-bold uppercase tracking-tighter">
-                            <span>No Prepayment Required</span>
-                            <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
-                            <span>Cancel Anytime</span>
-                        </div>
+                        <button data-service="DEEP" class="service-btn p-5 border-2 border-slate-100 rounded-2xl text-left btn-transition hover:border-teal-200">
+                            <h4 class="font-bold mb-1">Deep Clean</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">Intense scrubbing & biofilm elimination.</p>
+                        </button>
+                        <button data-service="WELLS" class="service-btn p-5 border-2 border-slate-100 rounded-2xl text-left btn-transition hover:border-teal-200">
+                            <h4 class="font-bold mb-1">Well Expert</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">Deep-ground well specialized cleaning.</p>
+                        </button>
+                        <button data-service="COMMERCIAL" class="service-btn p-5 border-2 border-slate-100 rounded-2xl text-left btn-transition hover:border-teal-200">
+                            <h4 class="font-bold mb-1">Commercial</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">Industrial grade for large compounds.</p>
+                        </button>
                     </div>
                 </div>
 
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <label class="block font-bold text-slate-800 mb-6 flex items-center gap-2">
+                        <span class="w-2 h-6 bg-brand rounded-full"></span> 2. System Inventory
+                    </label>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="flex items-center justify-between p-4 bg-slate-50 rounded-2xl">
+                            <div>
+                                <span class="block font-bold text-slate-700">Roof Tanks</span>
+                                <span class="text-xs text-slate-400">Standard units</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <button id="roof-minus" class="w-10 h-10 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center font-bold hover:bg-slate-100 active:scale-90 btn-transition">-</button>
+                                <span id="roof-count" class="font-bold text-lg w-4 text-center">1</span>
+                                <button id="roof-plus" class="w-10 h-10 rounded-xl bg-brand text-white shadow-md shadow-teal-100 flex items-center justify-center font-bold hover:brightness-110 active:scale-90 btn-transition">+</button>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-slate-50 rounded-2xl">
+                            <div>
+                                <span class="block font-bold text-slate-700">Ground Wells</span>
+                                <span class="text-xs text-slate-400">Underground units</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <button id="well-minus" class="w-10 h-10 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center font-bold hover:bg-slate-100 active:scale-90 btn-transition">-</button>
+                                <span id="well-count" class="font-bold text-lg w-4 text-center">0</span>
+                                <button id="well-plus" class="w-10 h-10 rounded-xl bg-brand text-white shadow-md shadow-teal-100 flex items-center justify-center font-bold hover:brightness-110 active:scale-90 btn-transition">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-96 sticky top-28">
+                <div class="bg-slate-900 rounded-[2rem] p-8 text-white shadow-2xl overflow-hidden relative">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
+                    
+                    <h3 class="text-xl font-bold mb-8 flex items-center gap-2">
+                         Booking Summary
+                    </h3>
+                    
+                    <div class="space-y-6 relative z-10">
+                        <div class="flex justify-between items-start border-b border-white/10 pb-4">
+                            <div>
+                                <p id="summary-service" class="font-medium text-teal-400">Standard Cleaning</p>
+                                <p id="summary-items" class="text-xs text-slate-400 mt-1">Roof Tanks: 1</p>
+                            </div>
+                            <span class="text-xs bg-white/10 px-2 py-1 rounded">Service</span>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-sm">
+                            <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center">📅</div>
+                            <div>
+                                <p class="font-medium">Appointment</p>
+                                <p class="text-xs text-slate-400">Available: Today (within 2h)</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="flex justify-between items-end mb-8">
+                                <span class="text-slate-400 font-medium">Grand Total</span>
+                                <div class="text-right">
+                                    <span id="total-cost" class="text-4xl font-black text-white">28</span>
+                                    <span class="text-brand font-bold ml-1">JOD</span>
+                                </div>
+                            </div>
+                            
+                            <button class="w-full bg-brand text-white py-5 rounded-2xl font-bold text-lg shadow-lg shadow-teal-900/20 hover:scale-[1.02] active:scale-95 btn-transition">
+                                Confirm Appointment
+                            </button>
+                            
+                            <p class="text-[10px] text-center text-slate-500 mt-6 uppercase tracking-widest font-bold">
+                                🔒 Secure Booking & Verified Pros
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+<footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <div class="space-y-6">
+                    <div class="flex items-center gap-2">
+                        <div class="w-10 h-10 bg-brand rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-teal-500/20">C</div>
+                        <span class="text-2xl font-extrabold tracking-tight">Crystal<span class="text-brand">ly</span></span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        The leading experts in water system sanitation in Amman. We use advanced technology to ensure pure and healthy water reaches every home.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand transition-all hover:-translate-y-1">
+                            <svg class="w-5 h-5 fill-current text-slate-300" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand transition-all hover:-translate-y-1">
+                            <svg class="w-5 h-5 fill-current text-slate-300" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
 
-    <footer class="bg-slate-900 text-white pt-20 pb-10">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-slate-800 pb-16">
-            <div class="col-span-1 md:col-span-1">
-                <div class="flex items-center gap-2 mb-6">
-                    <div class="w-8 h-8 brand-gradient rounded-lg flex items-center justify-center text-white font-bold">C</div>
-                    <span class="text-xl font-bold">Crystal Clean</span>
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#services" class="text-slate-400 hover:text-brand transition-colors text-sm">Our Services</a></li>
+                        <li><a href="#how-it-works" class="text-slate-400 hover:text-brand transition-colors text-sm">How It Works</a></li>
+                        <li><a href="#booking" class="text-slate-400 hover:text-brand transition-colors text-sm">Pricing & Booking</a></li>
+                        <li><a href="#faq" class="text-slate-400 hover:text-brand transition-colors text-sm">Safety Standards</a></li>
+                    </ul>
                 </div>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6">The leading provider of hygiene solutions for water storage systems in Jordan since 2015.</p>
-                <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand transition">f</a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand transition">in</a>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4 text-sm text-slate-400">
+                            <span class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-brand">📍</span>
+                            Amman, Jordan
+                        </li>
+                        <li class="flex items-center gap-4 text-sm text-slate-400">
+                            <span class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-brand">📞</span>
+                            +962 79 000 0000
+                        </li>
+                        <li class="flex items-center gap-4 text-sm text-slate-400">
+                            <span class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-brand">✉️</span>
+                            support@crystally.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Newsletter</h4>
+                    <p class="text-slate-400 text-sm mb-6">Stay updated with water maintenance tips and seasonal offers.</p>
+                    <form class="flex flex-col gap-3">
+                        <input type="email" placeholder="Your Email Address" class="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors text-white">
+                        <button class="bg-brand text-white font-bold py-3 rounded-xl hover:brightness-110 transition-all shadow-lg shadow-teal-500/20">Subscribe</button>
+                    </form>
                 </div>
             </div>
-            <div>
-                <h4 class="font-bold mb-6">Services</h4>
-                <ul class="text-slate-400 text-sm space-y-4">
-                    <li><a href="#" class="hover:text-white transition">Residential Cleaning</a></li>
-                    <li><a href="#" class="hover:text-white transition">Commercial Maintenance</a></li>
-                    <li><a href="#" class="hover:text-white transition">Water Quality Testing</a></li>
-                </ul>
+
+            <div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-xs">
+                <p>© 2026 Crystally Cleaning Services. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
             </div>
-            <div>
-                <h4 class="font-bold mb-6">Company</h4>
-                <ul class="text-slate-400 text-sm space-y-4">
-                    <li><a href="#" class="hover:text-white transition">About Our Tech</a></li>
-                    <li><a href="#" class="hover:text-white transition">Safety Protocols</a></li>
-                    <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6">Office</h4>
-                <p class="text-slate-400 text-sm mb-2">Amman, Mecca St. Building 42</p>
-                <p class="text-brand font-bold">079 000 0000</p>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 mt-10 text-center text-slate-500 text-xs">
-            © 2026 Crystally Maintenance Systems. Licensed by Amman Municipality.
         </div>
     </footer>
-
     <script>
-        let state = {
-            service: 'Standard',
-            basePrice: 20,
-            tanks: 1,
-            wells: 0
-        };
+        document.addEventListener('DOMContentLoaded', () => {
+            const serviceButtons = document.querySelectorAll('[data-service]');
+            const roofCountEl = document.querySelector('#roof-count');
+            const wellCountEl = document.querySelector('#well-count');
+            const totalCostEl = document.querySelector('#total-cost');
+            const serviceNameEl = document.querySelector('#summary-service');
+            const itemsList = document.querySelector('#summary-items');
 
-        function selectService(name, price) {
-            state.service = name;
-            state.basePrice = price;
-            
-            // UI Update
-            document.querySelectorAll('.option-card').forEach(card => card.classList.remove('btn-active'));
-            document.getElementById('service-' + name).classList.add('btn-active');
-            
-            calculate();
-        }
+            let state = { service: 'STANDARD', roof: 1, well: 0 };
+            const servicePrices = { STANDARD: 28, DEEP: 50, WELLS: 45, COMMERCIAL: 75 };
 
-        function updateQty(type, change) {
-            state[type] = Math.max(type === 'tanks' ? 1 : 0, state[type] + change);
-            document.getElementById('qty-' + type).innerText = state[type];
-            calculate();
-        }
+            function updateSummary() {
+                // Update Summary Text
+                serviceNameEl.textContent = state.service + ' Cleaning';
+                let itemsText = [];
+                if(state.roof > 0) itemsText.push(`Roof Tanks: ${state.roof}`);
+                if(state.well > 0) itemsText.push(`Ground Wells: ${state.well}`);
+                itemsList.innerHTML = itemsText.join(' | ');
 
-        function calculate() {
-            // Price calculation logic
-            const addTanksPrice = (state.tanks - 1) * 8;
-            const addWellsPrice = state.wells * 15;
-            const subtotal = state.basePrice + addTanksPrice + addWellsPrice;
-            const tax = subtotal * 0.16;
-            const total = subtotal + tax;
+                // Calc Total
+                let total = (state.roof + state.well) * servicePrices[state.service];
+                
+                // Animate Price change
+                totalCostEl.textContent = total;
+                
+                // Highlight active button
+                serviceButtons.forEach(btn => {
+                    if(btn.dataset.service === state.service) {
+                        btn.classList.add('active-service');
+                    } else {
+                        btn.classList.remove('active-service');
+                    }
+                });
+            }
 
-            // Update UI
-            document.getElementById('summary-service-name').innerText = state.service;
-            document.getElementById('summary-service-price').innerText = state.basePrice + ' JOD';
-            document.getElementById('summary-tanks-qty').innerText = state.tanks - 1;
-            document.getElementById('summary-tanks-price').innerText = addTanksPrice + ' JOD';
-            document.getElementById('summary-tax').innerText = tax.toFixed(1) + ' JOD';
-            document.getElementById('total-price').innerText = total.toFixed(1);
-        }
+            serviceButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    state.service = btn.dataset.service;
+                    updateSummary();
+                });
+            });
+
+            document.querySelector('#roof-plus').addEventListener('click', () => { state.roof++; roofCountEl.textContent = state.roof; updateSummary(); });
+            document.querySelector('#roof-minus').addEventListener('click', () => { if(state.roof > 0){ state.roof--; roofCountEl.textContent = state.roof; updateSummary(); } });
+            document.querySelector('#well-plus').addEventListener('click', () => { state.well++; wellCountEl.textContent = state.well; updateSummary(); });
+            document.querySelector('#well-minus').addEventListener('click', () => { if(state.well > 0){ state.well--; wellCountEl.textContent = state.well; updateSummary(); } });
+
+            // Init
+            updateSummary();
+        });
     </script>
-
 </body>
 </html>
