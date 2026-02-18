@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-center">
+
+    <a href="ar" class="fixed z-[999] top-5 right-5 w-12 h-12 flex items-center justify-center text-white font-bold 
+      bg-[#0F5269]
+      rounded-full shadow-lg cursor-pointer hover:scale-110 transition-transform duration-300">
+      Ar
+    </a>
+
+    <div class="fixed z-[999] bottom-5 right-5 w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center text-white font-bold border border-green-600 
+      bg-gradient-to-tr from-green-600 via-green-500 to-green-400
+      rounded-full shadow-lg cursor-pointer hover:scale-110 transition-transform duration-300">
+        <i class="fa-brands fa-whatsapp text-white text-2xl lg:text-3xl font-bold"></i>
+    </div>
+
+
+  <section id="Hero" class="flex flex-col items-center justify-center text-center min-h-[50vh] xl:min-h-screen  bg-gradient-to-bl from-sky-400 via-[#A7DADC] to-[#A0E7E5] px-6 py-16 w-full">
+  
+      <div class="flex flex-col gap-4 mb-8">
+          <img 
+          src="/images/cleanClick.png" 
+          alt="Clean Click Logo" 
+          class="w-12 md:w-52 h-12 md:h-40"
+          >
+          <p class="text-5xl font-black tracking-wide text-[#1F4E5F]
+                    drop-shadow-[0_2px_4px_rgba(0,0,0,0.25)]
+                    drop-shadow-[0_0_15px_rgba(31,78,95,0.7)]">
+            CleanClick
+          </p>
+      </div>
+
+      <div class="relative w-full flex justify-center items-center">
+          <div class="absolute top-1/2 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent blur-sm opacity-70"></div>
+          <h1 class="relative text-3xl sm:text-4xl md:text-5xl text-[#1F4E5F] font-bold drop-shadow-sm mb-4 text-center">
+              Clean Click Water Well & Tank Cleaning
+          </h1>
+      </div>
+
+
+      <p class="text-lg sm:text-xl md:text-2xl font-semibold text-[#1F4E5F] max-w-2xl mb-8">
+          Experts in water well and tank cleaning services in Amman
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <div>
+            <button id="whatsappButton" class="bg-gradient-to-bl from-[#8FD6D1] via-[#A7DADC] to-[#C7E9E4] 
+                    hover:from-[#F2F2F2] hover:to-[#A8DADC] border border-[#8FD6D1] 
+                    text-[#1F4E5F] font-semibold px-8 py-3 rounded-xl shadow-md 
+                    hover:shadow-lg transition-all duration-300 flex items-center 
+                    justify-center gap-2 transform hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+              Start WhatsApp Chat
+            </button>
+          </div>
+
+          <a  href="#Ourservices"
+          class="bg-gradient-to-bl from-[#71C9CE] via-[#006D77] to-[#71C9CE] hover:from-[#F2F2F2] border border-[#8FD6D1] hover:to-[#A8DADC] text-white hover:text-[#1F4E5F] font-semibold px-8 py-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105"
+          >
+          View Services
+        </a>
+      </div>
+  </section>
+  <section id="aboutUs" class="bg-gray-50 py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-bold text-[#2B6777] mb-4">
+        About Us
+      </h2>
+      <p class="text-lg md:text-xl font-medium text-[#2B6777] mb-16 max-w-3xl mx-auto leading-relaxed">
+        At Crystal, we provide professional water well and tank cleaning services using the latest equipment and techniques to ensure clean and safe water. We serve homes, companies, and institutions in Amman, delivering high-quality, reliable service.
+      </p>
+      <h3 class="text-2xl md:text-3xl font-bold text-[#2B6777] mb-8">
+        Our Strengths
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 text-left">
+        <div class="flex flex-col items-center bg-white border justify-center p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+          <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#EAF6F6] mb-4 shadow-md hover:bg-cyan-200 transition-all duration-300">
+            <i class="fas fa-shield-alt text-[#2B6777] text-3xl"></i>
+          </div>
+          <p class="font-semibold text-xl mb-2 text-[#2B6777]">Certified & Safe</p>
+          <p class="text-[#2B6777] text-center">Licensed team using approved cleaning methods</p>
+        </div>
+
+        <div class="flex flex-col items-center bg-white border justify-center p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+          <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#EAF6F6] mb-4 shadow-md hover:bg-cyan-200 transition-all duration-300">
+            <i class="fas fa-tools text-[#2B6777] text-3xl"></i>
+          </div>
+          <p class="font-semibold text-xl mb-2 text-[#2B6777]">Extensive Experience</p>
+          <p class="text-[#2B6777] text-center">Years of expertise in water system maintenance</p>
+        </div>
+
+        <div class="flex flex-col items-center bg-white border justify-center p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 
+                    sm:col-span-2 sm:justify-self-center lg:col-span-1">
+          <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#EAF6F6] mb-4 shadow-md hover:bg-cyan-200 transition-all duration-300">
+            <i class="fas fa-handshake text-[#2B6777] text-3xl"></i>
+          </div>
+          <p class="font-semibold text-xl mb-2 text-[#2B6777]">Trusted</p>
+          <p class="text-[#2B6777] text-center">Hundreds of satisfied customers in Amman</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="Ourservices" class="py-20 px-6 text-white w-full bg-[#1F4E5F]">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-8 text-[#EAF6F6]">
+        Our Services
+      </h2>
+      <p class="text-lg md:text-xl font-medium text-[#EAF6F6] mb-12 max-w-3xl mx-auto">
+        Tailored water well and tank cleaning services
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 text-left">
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-[#1F4E5F] rounded-2xl border border-slate-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <h3 class="text-xl md:text-2xl font-bold text-[#EAF6F6] text-center">
+            Roof Tank Cleaning
+          </h3>
+          <p class="text-[#EAF6F6] text-center">
+            Cleaning and disinfecting rooftop tanks for homes and businesses. We remove all sediments, algae, and contaminants to ensure your water supply remains clean and safe.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-[#1F4E5F] rounded-2xl border border-slate-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <h3 class="text-xl md:text-2xl font-bold text-[#EAF6F6] text-center">
+            Ground Well Cleaning
+          </h3>
+          <p class="text-[#EAF6F6] text-center">
+            Cleaning and maintenance of ground wells, removing sediments and inspecting water quality.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-[#1F4E5F] rounded-2xl border border-slate-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 md:col-span-2 xl:col-span-1 sm:mx-auto">
+          <h3 class="text-xl md:text-2xl font-bold text-[#EAF6F6] text-center">
+            Underground Concrete Tank Cleaning
+          </h3>
+          <p class="text-[#EAF6F6] text-center">
+            Comprehensive cleaning of large underground concrete tanks, removing sediments and disinfecting walls and floors. Ideal for companies and large complexes.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<section id="Booking" class="bg-gray-50 py-20 px-6 w-full">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-5xl font-extrabold text-[#2B6777] mb-4">
+      Prices and Discounts
+    </h2>
+    <p class="text-lg md:text-xl font-medium text-[#2B6777] mb-16 max-w-3xl mx-auto leading-relaxed">
+      Choose your service and enjoy transparent pricing with no hidden fees
+    </p>
+
+    <div class="relative">
+      <div id="cards-container"
+           class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 snap-x snap-mandatory justify-start md:justify-center">
+
+        <div class="snap-center flex-shrink-0 w-full md:w-full lg:w-full flex flex-col justify-between p-2 sm:p-4 lg:p-6 bg-white rounded-xl shadow-xl border border-gray-100 transition-transform transform hover:-translate-y-3 hover:shadow-2xl hover:scale-105">
+          <h3 class="font-bold text-2xl mb-6 text-[#2B6777] text-start">Individual House / Apartment</h3>
+          <div class="flex flex-col space-y-6">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Cleaning of all tanks (roof & ground)</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Removal of sand, sediments, silt, and debris</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Disinfection with safe chemicals for drinking water</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#FFB347] to-[#FF7E5F] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="font-semibold text-[#0F5269] text-sm md:text-base text-start">Roof Tank: 8 JOD | Ground Tank: 20 JOD</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="snap-center flex-shrink-0 w-full md:w-full lg:w-full flex flex-col justify-between p-2 sm:p-4 lg:p-6 bg-white rounded-xl shadow-xl border border-gray-100 transition-transform transform hover:-translate-y-3 hover:shadow-2xl hover:scale-105">
+          <h3 class="font-bold text-2xl mb-6 text-[#2B6777] text-start">Residential Complexes</h3>
+          <div class="flex flex-col space-y-6">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Cleaning of all tanks (roof & ground)</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Removal of sand, sediments, silt, and debris</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Disinfection with safe chemicals for drinking water</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#FFB347] to-[#FF7E5F] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="font-semibold text-[#0F5269] text-sm md:text-base text-start">Discount 15% if more than 4 apartments / 4 ground + 4 roof tanks</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="snap-center flex-shrink-0 w-full md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto md:w-full mx-auto md:max-w-md flex flex-col justify-between p-2 sm:p-4 lg:p-6 bg-white rounded-xl shadow-xl border border-gray-100 transition-transform transform hover:-translate-y-3 hover:shadow-2xl hover:scale-105">
+          <h3 class="font-bold text-2xl mb-6 text-[#2B6777] text-start">Companies & Institutions</h3>
+          <div class="flex flex-col space-y-6">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Cleaning of all tanks (roof & ground)</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Removal of sand, sediments, silt, and debris</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#52AB98] to-[#2B6777] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="text-gray-700 text-start text-sm md:text-base">Disinfection with safe chemicals for drinking water</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-6 h-6 md:h-6 md:w-6 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#FFB347] to-[#FF7E5F] text-white flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <span class="font-semibold text-[#0F5269] text-sm md:text-base text-start">25% discount if total tanks > 10 or cleaning area > 20 m³</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bookingSection" class="bg-[#1F4E5F] py-20 px-6 text-white w-full">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-xl md:text-4xl font-extrabold mb-4 tracking-tight bg-gradient-to-b from-gray-200 to-white bg-clip-text text-transparent">
+      <i class="fas fa-calendar-check mr-2 text-[#EAF6F6]"></i>
+      Book Your Service Now
+    </h2>
+    <p class="text-lg md:text-xl font-medium text-[#E6F9F8] mb-4 max-w-3xl mx-auto">
+      Ensure clean and safe water!
+    </p>
+
+    <div class="flex flex-wrap justify-center items-center gap-6 mb-6">
+      <a href="https://wa.me/962798024513" class="bg-gradient-to-bl from-green-400 via-[#3FA7A0] to-green-400 hover:from-[#76C7B7] hover:to-[#76C7B7] hover:text-[#0F5269] border border-[#8FD6D1] text-white font-semibold px-8 py-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105">
+        <i class="fab fa-whatsapp text-2xl"></i> WhatsApp Booking
+      </a>
+
+      <a href="tel:+962798024513" class="bg-gradient-to-bl from-[#71C9CE] via-[#006D77] to-[#71C9CE] hover:from-[#F2F2F2] border border-[#8FD6D1] hover:to-[#A8DADC] text-white hover:text-[#1F4E5F] font-semibold px-8 py-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105">
+        <i class="fas fa-phone-alt text-lg"></i> Call Directly
+      </a>
+    </div>
+
+    <p class="text-[#E6F9F8] font-medium">
+      <i class="fas fa-clock mr-2"></i>
+      Available 7 days a week • Same-day service • No hidden fees
+    </p>
+  </div>
+</section>
+
+  <section id="contact-us" class="bg-gray-50 py-20 px-6 w-full text-gray-800">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 text-[#2B6777]">
+        Contact Us
+      </h2>
+      <p class="text-lg md:text-xl mb-12 text-[#2B6777]">
+        Get in touch with us for inquiries or bookings
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-8">
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-full sm:w-[45%] md:w-[45%] lg:w-[22%]">
+          <i class="fas fa-phone-alt text-[#2B6777] text-3xl"></i>
+          <h4 class="text-xl font-bold text-[#2B6777]">Phone</h4>
+          <p class="text-[#4FB3BF] text-center">+962 798 024 513</p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-full sm:w-[45%] md:w-[45%] lg:w-[22%]">
+          <i class="fas fa-envelope text-[#2B6777] text-3xl"></i>
+          <h4 class="text-xl font-bold text-[#2B6777]">Email</h4>
+          <p class="text-[#4FB3BF] text-center">info@waterclean-jo.com</p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-full sm:w-[45%] md:w-[45%] lg:w-[22%] md:mx-auto">
+          <i class="fas fa-map-marker-alt text-[#2B6777] text-3xl"></i>
+          <h4 class="text-xl font-bold text-[#2B6777]">Location</h4>
+          <p class="text-[#4FB3BF] text-center">Amman, Jordan</p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center justify-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 w-full sm:w-[45%] md:w-[45%] lg:w-[22%] md:mx-auto">
+          <i class="fas fa-clock text-[#2B6777] text-3xl"></i>
+          <h4 class="text-xl font-bold text-[#2B6777]">Working Hours</h4>
+          <p class="text-[#4FB3BF] text-center">7 days a week, 8:00 AM – 8:00 PM</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="bg-gradient-to-b from-slate-800 via-slate-900 to-slate-800 py-20 px-6 text-white w-full">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <div>
+        <h3 class="text-2xl font-extrabold text-[#A8DADC] mb-4">WaterClean</h3>
+        <p class="text-gray-300 mb-4">
+          At Crystal, we specialize in professional water well and tank cleaning services in Amman. Using modern equipment and certified methods, we ensure clean, safe, and reliable water for homes, buildings, and institutions. Our licensed team, extensive experience, and trusted service make us the preferred choice for hundreds of satisfied customers.
+        </p>
+
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="text-gray-300 hover:text-[#A8DADC] transition-colors duration-300 text-lg"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-gray-300 hover:text-[#A8DADC] transition-colors duration-300 text-lg"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-300 hover:text-[#A8DADC] transition-colors duration-300 text-lg"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-300 hover:text-[#A8DADC] transition-colors duration-300 text-lg"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-[#A0E7E5] mb-4">Contact Us</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li class="flex items-center gap-3">
+            <i class="fas fa-phone-alt text-[#A0E7E5]"></i>
+            <a href="tel:+962798024513" dir="ltr" class="underline" style="letter-spacing: 0.02em;">0 7 9 8 0 2 4 *** Call now</a>
+          </li>        
+          <li class="flex items-center gap-3"><i class="fas fa-envelope text-[#A0E7E5]"></i>crystal.company.jordan@gmail.com</li>
+          <li class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-[#A0E7E5]"></i> Amman, Jordan</li>
+          <li class="flex items-center gap-3"><i class="fas fa-clock text-[#A0E7E5]"></i> 7 days a week, 8:00 AM – 8:00 PM</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xl font-bold text-[#A0E7E5] mb-4">Quick Links</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li><a href="#aboutUs" class="hover:text-[#A0E7E5] transition-colors duration-300">About Us</a></li>
+          <li><a href="#Ourservices" class="hover:text-[#A0E7E5] transition-colors duration-300">Our Services</a></li>
+          <li><a href="#Booking" class="hover:text-[#A0E7E5] transition-colors duration-300">Booking</a></li>
+          <li><a href="#contact-us" class="hover:text-[#A0E7E5] transition-colors duration-300">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
+      &copy; 2025 <span class="text-[#E6F9F8]">Crystal</span>. All rights reserved.
+    </div>
+  </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('cards-container');
+    const dotsContainer = document.getElementById('cards-dots');
+    const cards = Array.from(container.children);
+
+    if (!container || window.innerWidth >= 768) return; 
+
+    cards.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.className = 'w-3 h-3 rounded-full bg-gray-400 transition-all duration-300 cursor-pointer';
+      dot.addEventListener('click', () => {
+        container.scrollTo({ left: cards[index].offsetLeft, behavior: 'smooth' });
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    const updateDots = () => {
+      const scrollLeft = container.scrollLeft;
+      const cardWidth = cards[0].offsetWidth + 32; 
+      const activeIndex = Math.round(scrollLeft / cardWidth);
+      dotsContainer.querySelectorAll('div').forEach((dot, idx) => {
+        dot.classList.toggle('bg-[#4DD6C6]', idx === activeIndex);
+        dot.classList.toggle('bg-gray-400', idx !== activeIndex);
+      });
+    };
+
+    updateDots();
+    container.addEventListener('scroll', updateDots);
+  });
+
+
+  document.getElementById('whatsappButton').addEventListener('click', function() {
+    console.log('User started WhatsApp chat');
+
+    const phone = "962798024513";
+    const text = "Hello! I want to start a booking conversation.";
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+});
+</script>
+
+</body>
+</html>
